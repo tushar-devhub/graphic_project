@@ -40,7 +40,7 @@ export default function VerifyEmailPage() {
       <div className="w-full max-w-md bg-white rounded-3xl border border-slate-200/80 p-8 sm:p-10 shadow-sm text-center space-y-6">
         {/* Logo */}
         <Link to="/" className="inline-block">
-          <img src={logo} alt="GramUdaan Logo" className="h-12 w-12 rounded-2xl mx-auto shadow-sm" />
+          <img src={logo} alt="GramUdaan Logo" className="h-14 w-auto object-contain mx-auto" />
         </Link>
 
         {/* Mail Icon */}

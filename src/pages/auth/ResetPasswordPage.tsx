@@ -67,7 +67,7 @@ export default function ResetPasswordPage() {
         {/* Header Logo */}
         <div className="flex flex-col items-center text-center">
           <Link to="/" className="inline-block mb-4">
-            <img src={logo} alt="GramUdaan Logo" className="h-12 w-12 rounded-2xl mx-auto shadow-sm" />
+            <img src={logo} alt="GramUdaan Logo" className="h-14 w-auto object-contain mx-auto" />
           </Link>
           <div className="h-10 w-10 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center mb-3">
             <KeyRound className="h-5 w-5" />

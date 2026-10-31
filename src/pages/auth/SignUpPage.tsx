@@ -123,8 +123,7 @@ export default function SignUpPage() {
         {/* Top Header: Mobile Logo & Language Toggle */}
         <div className="flex items-center justify-between mb-6">
           <Link to="/" className="flex items-center gap-2.5 lg:hidden">
-            <img src={logo} alt="GramUdaan Logo" className="h-8 w-8 rounded-lg" />
-            <span className="text-lg font-bold text-emerald-950 font-serif-display">GramUdaan</span>
+            <img src={logo} alt="GramUdaan Logo" className="h-9 w-auto object-contain" />
           </Link>
           <div className="ml-auto">
             <button

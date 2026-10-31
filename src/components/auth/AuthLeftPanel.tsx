@@ -38,11 +38,13 @@ export function AuthLeftPanel({
       {/* Top branding */}
       <div className="relative z-10">
         <Link to="/" className="inline-flex items-center gap-3 group">
-          <img
-            src={logo}
-            alt="GramUdaan Logo"
-            className="h-10 w-10 rounded-xl bg-white/10 p-1 backdrop-blur-sm border border-white/20 transition-transform group-hover:scale-105"
-          />
+          <div className="rounded-xl bg-white p-1.5 shadow-sm border border-white/20 transition-transform group-hover:scale-105">
+            <img
+              src={logo}
+              alt="GramUdaan Logo"
+              className="h-10 w-auto object-contain"
+            />
+          </div>
           <div>
             <span className="text-xl font-bold tracking-tight text-white font-serif-display block">
               GramUdaan

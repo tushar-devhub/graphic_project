@@ -119,8 +119,7 @@ export default function SignInPage() {
         {/* Top Header: Logo for Mobile & Language Switcher */}
         <div className="flex items-center justify-between mb-8">
           <Link to="/" className="flex items-center gap-2.5 lg:hidden">
-            <img src={logo} alt="GramUdaan Logo" className="h-8 w-8 rounded-lg" />
-            <span className="text-lg font-bold text-emerald-950 font-serif-display">GramUdaan</span>
+            <img src={logo} alt="GramUdaan Logo" className="h-9 w-auto object-contain" />
           </Link>
           <div className="ml-auto">
             <button

@@ -144,9 +144,7 @@ function Auth({ redirectAfterAuth }: AuthProps = {}) {
                     <img
                       src={logo}
                       alt="GramUdaan Logo"
-                      width={64}
-                      height={64}
-                      className="rounded-lg mb-4 mt-4 cursor-pointer"
+                      className="h-14 w-auto object-contain mb-4 mt-4 cursor-pointer mx-auto"
                       onClick={() => navigate("/")}
                     />
                   </div>

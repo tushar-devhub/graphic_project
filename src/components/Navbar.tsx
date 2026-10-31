@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router";
 import { useState } from "react";
-import { Menu, X, Globe, Languages } from "lucide-react";
+import { Menu, X, Languages } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -38,14 +39,13 @@ export function Navbar({ className, variant = "landing" }: NavbarProps) {
       )}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo */}
-        <Link to="/" className="flex items-center gap-2.5">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary">
-            <Globe className="h-5 w-5 text-primary-foreground" />
-          </div>
-          <span className="text-xl font-bold text-foreground font-sans-body tracking-tight">
-            Gram<span className="text-primary">Udaan</span>
-          </span>
+        {/* Official GramUdaan Logo */}
+        <Link to="/" className="flex items-center group py-1" aria-label="GramUdaan Home">
+          <img
+            src={logo}
+            alt="GramUdaan"
+            className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+          />
         </Link>
 
         {/* Desktop nav */}

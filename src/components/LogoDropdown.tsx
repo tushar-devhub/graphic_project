@@ -36,10 +36,8 @@ export function LogoDropdown() {
         <Button variant="ghost" size="icon" className="h-10 w-10">
           <img
             src={logo}
-            alt="Logo"
-            width={32}
-            height={32}
-            className="rounded-lg"
+            alt="GramUdaan Logo"
+            className="h-8 w-auto object-contain"
           />
         </Button>
       </DropdownMenuTrigger>

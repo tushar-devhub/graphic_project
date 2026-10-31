@@ -4,6 +4,7 @@ import { useOnboarding } from "@/lib/onboarding-context";
 import { useAuth } from "@/hooks/use-auth";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/i18n/LanguageContext";
+import logo from "@/assets/logo.png";
 import {
   LayoutDashboard,
   Bot,
@@ -17,7 +18,6 @@ import {
   X,
   ChevronRight,
   LogOut,
-  Globe,
   Sparkles,
   MoreHorizontal,
   HelpCircle,
@@ -364,13 +364,12 @@ function MobileDrawer({ open, onClose }: { open: boolean; onClose: () => void })
         )}
       >
         <div className="flex items-center justify-between border-b border-border px-4 py-3">
-          <Link to="/dashboard" onClick={onClose} className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white">
-              <Globe className="h-4 w-4" />
-            </span>
-            <span className="text-base font-bold tracking-tight text-foreground">
-              Gram<span className="text-emerald-700">Udaan</span>
-            </span>
+          <Link to="/dashboard" onClick={onClose} className="flex items-center group py-0.5" aria-label="GramUdaan Dashboard">
+            <img
+              src={logo}
+              alt="GramUdaan"
+              className="h-9 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+            />
           </Link>
           <button
             onClick={onClose}
@@ -561,13 +560,12 @@ export default function AppShell() {
           </button>
 
           {/* Logo */}
-          <Link to="/dashboard" className="flex shrink-0 items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-600 text-white shadow-sm">
-              <Globe className="h-4 w-4" />
-            </span>
-            <span className="hidden text-lg font-bold tracking-tight text-foreground sm:block">
-              Gram<span className="text-emerald-700">Udaan</span>
-            </span>
+          <Link to="/dashboard" className="flex shrink-0 items-center group py-0.5" aria-label="GramUdaan Dashboard">
+            <img
+              src={logo}
+              alt="GramUdaan"
+              className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+            />
           </Link>
 
           <div className="mx-1 hidden h-6 w-px bg-border md:block" />

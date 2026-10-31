@@ -173,7 +173,7 @@ export function SharedDashboardShell() {
 
           {/* GramUdaan Brand Logo */}
           <Link to={roleDashboardUrl} className="flex items-center gap-2.5">
-            <img src={logo} alt="GramUdaan Logo" className="h-9 w-9 rounded-xl shadow-xs" />
+            <img src={logo} alt="GramUdaan Logo" className="h-9 sm:h-10 w-auto object-contain shadow-xs" />
             <div className="hidden sm:block">
               <span className="text-base font-bold text-slate-900 tracking-tight font-serif-display leading-tight block">
                 GramUdaan
@@ -390,7 +390,7 @@ export function SharedDashboardShell() {
               <div className="space-y-6">
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <div className="flex items-center gap-2">
-                    <img src={logo} alt="GramUdaan" className="h-8 w-8 rounded-lg" />
+                    <img src={logo} alt="GramUdaan" className="h-8 w-auto object-contain" />
                     <div>
                       <span className="font-bold text-sm text-slate-900">GramUdaan</span>
                       <span className="block text-[10px] text-emerald-800 font-semibold">{roleLabel}</span>

@@ -1,4 +1,4 @@
-import { Globe } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
@@ -7,11 +7,14 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/15">
-                <Globe className="h-5 w-5" />
+            <div className="flex items-center mb-4">
+              <div className="inline-block rounded-xl bg-white p-2 shadow-sm">
+                <img
+                  src={logo}
+                  alt="GramUdaan"
+                  className="h-12 w-auto object-contain"
+                />
               </div>
-              <span className="text-xl font-bold font-sans-body">GramUdaan</span>
             </div>
             <p className="text-sm text-primary-foreground/70 leading-relaxed max-w-xs">
               An AI-powered business advisory platform helping rural and semi-urban
